@@ -1,0 +1,8 @@
+{
+  "scopes": [
+    "https://www.googleapis.com/auth/calendar.readonly"
+  ],
+  "tokenDir": "/.credentials/",
+  "tokenPath": "/.credentials/google-calendar.json",
+  "secretPath": "/.credentials/google-secret.json"
+}

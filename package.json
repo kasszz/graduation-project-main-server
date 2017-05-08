@@ -1,0 +1,14 @@
+{
+  "name": "graduation-project-main-server",
+  "version": "0.0.1",
+  "description": "A project that is the hub for all the smaller servers needed for this project",
+  "scripts": {
+    "start": "node ./start-servers.js"
+  },
+  "dependencies": {
+    "cron": "1.2.1",
+    "google-auth-library": "0.10.0",
+    "googleapis": "19.0.0",
+    "node-cron": "1.1.3"
+  }
+}

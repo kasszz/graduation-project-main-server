@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+  END RESET
+*/
+
+/*
+  HELPER CLASSES
+*/
+
+.a11y-only {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/*
+  END HELPER CLASSES
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: #f7f9fa;
+  color: #7b888e;
+}
+
+.wrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 500;
+  color: #394549;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+table {
+  width: 100%;
+  background-color: #fefefe;
+  display: none;
+}
+
+table.active {
+  display: table;
+}
+
+thead {
+  background-color: #EEE;
+  border: 1px solid #DDD;
+  box-shadow: 0 3px 2px -2px #DDD;
+  font-weight: 500;
+}
+
+th, td {
+  padding: 10px;
+  line-height: 1.6;
+}
+
+tr {
+  border: 1px solid #DDD;
+  border-bottom: 0;
+  transition: 0.3s ease-out;
+}
+
+tr:last-of-type {
+  border-bottom: 1px solid #DDD;
+}
+
+tr.visited {
+  background-color: #DDD;
+}
+
+button {
+  border: 1px solid #DDD;
+  border-radius: 25px;
+  background: transparent;
+  width: 100%;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: #7b888e;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.call-to-action button {
+  background-color: #03b7f2;
+  color: #fefefe;
+}
+
+button:hover {
+  background-color: #03b7f2;
+  border-color: #548ea8;
+  color: #fefefe;
+}
+
+.main-header {
+  padding: 25px 0;
+  background-color: #fefefe;
+  box-shadow: 0 4px 2px -2px #DDD;
+}
+
+.main-header .wrapper {
+  position: relative;
+}
+
+.main-header .date {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+.company-agenda {
+  padding-top: 25px;
+}
+
+.company-agenda h2 {
+  padding-bottom: 25px;
+}
+
+.current-time-cell {
+  width: 6rem;
+}
+
+.description-cell {
+  width: 15rem;
+}
+
+.reason-cell {
+  width: 25rem;
+  text-align: left;
+}
+
+.status-cell {
+  width: 9rem;
+}
+
+.time, .description, .reason {
+  vertical-align: top;
+}
+
+.time {
+  text-align: center;
+}
+
+.time span {
+  display: block;
+}
+
+.description span {
+  display: block;
+}
+
+.description span:last-of-type {
+  margin-bottom: 0;
+}
+
+.description .company-name {
+  font-weight: 500;
+}
+
+.status {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.no-appointments {
+  display: none;
+}
+
+.no-appointments.active {
+  display: block;
+}
