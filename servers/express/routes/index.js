@@ -10,6 +10,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/appointments', (req, res, next) => {
+  res.setHeader('Cache-Control', 'max-age=0');
   res.send(agenda.getAppointments());
 });
 

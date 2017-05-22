@@ -31,7 +31,7 @@ function init(port) {
   server.on('error', onError);
   server.on('listening', onListening);
 
-  console.log('Express initialised on port: ' + port);
+  console.log('Express: initialised on port ' + port);
   return server;
 
   /**

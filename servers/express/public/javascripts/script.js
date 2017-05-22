@@ -122,7 +122,7 @@
     tdStatus.classList.add('status');
     tr.appendChild(tdStatus);
 
-    if(appointment.active) {
+    if(appointment.isComing || appointment.came) {
       tdStatus.innerHTML = statusDone;
       tdStatus.parentNode.classList.add('visited');
     } else {
