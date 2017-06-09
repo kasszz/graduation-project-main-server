@@ -12,8 +12,8 @@ let buttonDown = {
   three: false
 }
 
-function init() {
-  server = new mosca.Server({port: 8001});
+function init(port) {
+  server = new mosca.Server({port});
   startEvents();
 }
 
@@ -69,7 +69,7 @@ function startEvents() {
   });
 
   server.on('ready', () => {
-    console.log('MQTT: initialised');
+    console.log('MQTT: initialised on port ' + server.port);
   });
 }
 

@@ -13,6 +13,6 @@ agenda.init()
 function startServices() {
   const httpServer = express.init(8000);
   const webSocketServer = websockets.init(httpServer, stringBuilder);
-  const mqttServer = mqtt.init();
+  const mqttServer = mqtt.init(8001);
   const appointmentController = appointmentControllerLib.init(websockets, mqtt, agenda, stringBuilder);
 }

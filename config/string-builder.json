@@ -1,8 +1,12 @@
 {
-  "welcomeString": "{greeting} {name}, Welkom bij De Voorhoede. {weather} {controleur} komt er zo aan. Wil je in de tussentijd een spelletje spelen? Stap dan op de middelste voetknop.",
-  "goodluckString":"Succes met het spelen {name}!",
-  "dontWantToPlayString": "Jammer dat je niet wil spelen... Ik heb er maar 6 weken onderzoek voor gedaan hoor. Ik voel me totaal niet nutteloos nu. Weet je wat, nee. Fuck you, je bent gewoon een zielig mannetje dat niet eens even iets leuks kan doen. Bitch, {controleur} komt eraan.",
-  "gameOverString": "Wow! {score} punten. Dat heb je netjes gedaan. Ik heb {controleur} jouw kant op gestuurd. Nog een fijne dag verder!",
+  "welcomeString": "{greeting} {name}, Welkom bij De Voorhoede. {weather} {controleur} komt er zo aan. Wil je in de tussentijd een spelletje spelen? Sta dan op een van de voetknoppen. ",
+  "instructionString":"Probeer zo veel mogelijk schilden te vangen met je voeten. Ready. set. go! ",
+  "dontWantToPlayString": "Jammer dat je niet wil spelen. {controleur} komt eraan. ",
+  "gameOverStartString": "Wauw! {score} punten. Dat heb je netjes gedaan. ",
+  "gotHighscoreString": "Je hebt de highscore van de nummer één {highscoreName} met {highscoreDifference} punten verslagen, goedzo! ",
+  "sameAsHighscoreString": "Je hebt het zelfde aantal punten als {highscoreName}. Hiermee sta je op de {rank}de plek. ",
+  "didntGetHighscoreString": "Helaas heeft {highscoreName} {highscoreScore} punten gehaald. Je staat op de {rank}de plek. ",
+  "gameOverEndString": "Ik heb {controleur} jouw kant op gestuurd. Nog een fijne dag verder! ",
   "greeting": [
     {
       "range": {
@@ -82,7 +86,7 @@
         "max": 20
       },
       "base": [
-        "Ik hoop dat je al van dit weer kan genieten"
+        "Ik hoop dat je al van dit weer kan genieten."
       ],
       "addon": {
         "Thunderstorm": [", en dat je niet bang bent voor bliksem!"],
@@ -102,8 +106,8 @@
         "max": 25
       },
       "base": [
-        "Ik hoop dat je van dit warme weer aan het genieten bent",
-        "Ben je al lekker bruin? Dat kan bijna niet anders met dit warme weer"
+        "Ik hoop dat je van dit warme weer aan het genieten bent.",
+        "Ben je al lekker bruin? Dat kan bijna niet anders met dit warme weer."
       ],
       "addon": {
         "Thunderstorm": [],
